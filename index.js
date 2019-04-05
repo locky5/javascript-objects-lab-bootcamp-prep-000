@@ -9,11 +9,6 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
   return object
 }
 
-var object = {prop:1}
-
-destructivelyUpdateObjectWithKeyAndValue(object, 'prop2', 2)
-object
-
 function deleteFromObjectByKey(object,key) {
   var clone=Object.assign({},object) //copying object into empty object
   delete clone[key] //deletes key from a clone of object
